@@ -14,7 +14,11 @@ public class NeatController
 	public void start()
 	{
 		System.out.println("We made monsters today!");
-		System.out.println("Here is mine" + firstMonster);
+		System.out.println("My " + firstMonster);
+		System.out.println("My monster has this many eyeballs: " + firstMonster.getEyeCount());
+		System.out.println("My monster has this many tentacle arms: " + firstMonster.getArmCount());
+		System.out.println("My monster has this many pretzel hairs: " + firstMonster.getHairCount());
+		System.out.println("My monster has this many smelly smellers: " + firstMonster.getNoseCount());
 	}
 	
 	/*

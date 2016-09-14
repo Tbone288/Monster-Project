@@ -29,6 +29,42 @@ public class HowNeat
 		this.hasBellyButton = false;
 	}
 	
+	public String toString()
+	{
+		String description = "Monster says: My name is " + name;
+		
+		return description;
+	}
 	
+	public String getName()
+	{
+		return name;
+	
+	}
+	
+	public boolean getHasBellyButton()
+	{
+		return hasBellyButton;
+	}
+	
+	public int getArmCount()
+	{
+		return armCount;
+	}
+	
+	public int getNoseCount()
+	{
+		return noseCount;
+	}
+	
+	public double getHairCount()
+	{
+		return hairCount;
+	}
+	
+	public int getEyeCount()
+	{
+		return eyeCount;
+	}
 }
 
