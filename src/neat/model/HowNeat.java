@@ -28,4 +28,7 @@ public class HowNeat
 		this.noseCount = noseCount;
 		this.hasBellyButton = false;
 	}
+	
+	
 }
+
