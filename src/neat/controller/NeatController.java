@@ -1,5 +1,9 @@
 package neat.controller;
 
-public class NeatController {
-
+public class NeatController 
+{
+	public void start()
+	{
+		
+	}
 }
