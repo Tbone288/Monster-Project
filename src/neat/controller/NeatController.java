@@ -37,7 +37,24 @@ public class NeatController
 			System.out.println("Gosh dang it I don\'t like my name :(");
 		}
 		
+		
 		System.out.println(firstMonster);
+		
+		System.out.println("Do you want to change how many eyeballs I have?");
+		String eyeballanswer = keyboardInput.nextLine();
+		
+		if (eyeballanswer.equalsIgnoreCase ("yes"))
+		{
+			System.out.println("How many eyeballs do you want me to have?");
+			int newEye = keyboardInput.nextInt();
+			firstMonster.setEyeCount(newEye);
+		}
+		else
+		{
+			System.out.println("Looks like you don\'t want me looking TOO weird.");
+		}
+		
+		System.out.println("Monster says: I now have " + firstMonster.getEyeCount() + " eye(s)!");
 	}
 	
 	
