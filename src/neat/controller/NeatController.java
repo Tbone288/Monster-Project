@@ -26,7 +26,18 @@ public class NeatController
 		System.out.println("Do you want to change my name?");
 		String answer = keyboardInput.nextLine();
 		
+		if (answer.equalsIgnoreCase ("yes"))
+		{
+			System.out.println("What do you want the name to be?");
+			String newName = keyboardInput.nextLine();
+			firstMonster.setName(newName);
+		}
+		else
+		{
+			System.out.println("Gosh dang it I don\'t like my name :(");
+		}
 		
+		System.out.println(firstMonster);
 	}
 	
 	
