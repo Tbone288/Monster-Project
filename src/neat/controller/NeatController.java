@@ -1,14 +1,17 @@
 package neat.controller;
 
 import neat.model.HowNeat;
+import java.util.Scanner;
 
 public class NeatController 
 {
 	private HowNeat firstMonster;
+	private Scanner keyboardInput;
 	
 	public NeatController()
 	{
 		firstMonster = new HowNeat("Steve", 2.33, 1, 1, 2, false);
+		keyboardInput = new Scanner(System.in);
 	}
 	
 	public void start()
@@ -19,15 +22,13 @@ public class NeatController
 		System.out.println("My monster has this many tentacle arms: " + firstMonster.getArmCount());
 		System.out.println("My monster has this many pretzel hairs: " + firstMonster.getHairCount());
 		System.out.println("My monster has this many smelly smellers: " + firstMonster.getNoseCount());
+	
+		System.out.println("Do you want to change my name?");
+		String answer = keyboardInput.nextLine();
+		
+		
 	}
 	
-	/*
-	 * monster name is Steve
-	 * has 2.33 hair
-	 * has 1 arm
-	 * has 1 nose
-	 * has 2 eye
-	 * no belly button
-	 */
+	
 }
 
