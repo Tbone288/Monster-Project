@@ -55,6 +55,7 @@ public class NeatController
 		}
 		
 		System.out.println("Monster says: I now have " + firstMonster.getEyeCount() + " eye(s)!");
+		keyboardInput.nextLine();
 	
 		System.out.println("Do you want to change how many arms I have?");
 		String armanswer = keyboardInput.nextLine();
@@ -70,8 +71,26 @@ public class NeatController
 			System.out.println("You aren't any fun.");
 		}
 		
-		System.out.println("Monster says: I now have " + firstMonster.getArmCount() + " arm(s)");
+		System.out.println("Monster says: I now have " + firstMonster.getArmCount() + " arm(s)!");
+		keyboardInput.nextLine();
+	
+		System.out.println("Do you want to change how many noses I have?");
+		String noseanswer = keyboardInput.nextLine();
+		
+		if (noseanswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("How many noses do you want me to have?");
+			int newNose = keyboardInput.nextInt();
+			firstMonster.setNoseCount(newNose);
+		}
+		else
+		{
+			System.out.println("Dang it I wanted to smell things more easily.");
+		}
+		System.out.println("Monster says: I now have " + firstMonster.getNoseCount() + "noses(s)!");
 	}
+	
+	
 	
 	
 }
